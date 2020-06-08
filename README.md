@@ -4,6 +4,17 @@ This is a Scrapy project to login quotes website with formrequest  http://quotes
 
 This project is only meant for educational purposes.
 
+## Selection
+
+Request Form Data
+
+
+![Image of Request Form Data](https://github.com/Aniruddhsinh03/scrapyFormRequestDemo/blob/master/screenshots/requestform_2.png)
+
+Csrf_token Selection
+
+
+![Image of Csrf Token](https://github.com/Aniruddhsinh03/scrapyFormRequestDemo/blob/master/screenshots/requestForm1.jpg)
 
 ## Request data
 
