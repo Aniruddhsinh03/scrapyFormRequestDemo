@@ -36,6 +36,6 @@ Spider login with form data.
 
 You can run a spider using the `scrapy crawl` command, such as:
 
-    $ scrapy crawl quotesSpider
+    $ scrapy crawl scrapyFormRequestDemoSpider
 
 
