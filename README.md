@@ -1,33 +1,33 @@
 # scrapyFormRequestDemo
 
-This is a Scrapy project to scrape quotes and author information from  http://quotes.toscrape.com.
+This is a Scrapy project to login quotes website with formrequest  http://quotes.toscrape.com.
 
 This project is only meant for educational purposes.
 
 
-## Extracted data
+## Request data
 
-This project extracts quotes, combined with the respective author names and tags.
+This project Login with POST request.
 The extracted data looks like this sample:
 
-    {
-        'Author': 'Douglas Adams',
-        'Comment': '“I may not have gone where I intended to go, but I think I ...”',
-        'Tags': ['life', 'navigation'],
-        'Author Born Location': 'in Atlanta, Georgia, The United States', 
-        'Author Description': "Martin Luther King, Jr. was one of the pivotal leaders of the American civil rights movement. King was a'
-    }
+    
+        'Url': 'http://quotes.toscrape.com/login',
+        'Form Data': 'csrf_token': csrf_token,
+                      'username': 'foobar',
+                       'password': 'foobar'
+        
+    
 
 
 ## Spiders
 
-This project contains two spiders and you can list them using the `list`
+This project contains one spider and you can list them using the `list`
 command:
 
     $ scrapy list
-    quotesSpider
+    scrapyFormRequestDemoSpider
 
-Spider extract the data from quotes page and visit author hyperlink and extract auther infomation also.
+Spider login with form data.
 
 
 
@@ -38,6 +38,4 @@ You can run a spider using the `scrapy crawl` command, such as:
 
     $ scrapy crawl quotesSpider
 
-If you want to save the scraped data to a file, you can pass the `-o` option:
-    
-    $ scrapy crawl quotesSpider -o output.json
+
